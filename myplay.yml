@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-    -name: install nginx on prod server
+    - name: install nginx on prod server
       apt:
-        -name: nginx
+      - name: nginx
         state: present 
